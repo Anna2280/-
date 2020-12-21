@@ -1,0 +1,115 @@
+html body{
+    height: 100%;
+}
+header{
+    padding: 10px 0 0 10px;
+    background-color: bisque;
+}
+
+.lettering{
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: -4px;
+    right: 65px;
+    display: inline-block;
+    margin-bottom: 0px;
+
+}
+
+.logo-in{
+    flex-direction: inherit;
+    display: inline-block;
+    position: relative;
+    right: 70px;
+    bottom: 15px;
+}
+
+.menu > li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: 19px;
+    left: 320px;
+}
+.menu > li > a{
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    text-transform: uppercase;
+    padding-right: 15px;
+    font-size: 12px;
+}
+
+.nav{
+    background-color:#FFF0DF;
+    display: flex;
+    justify-content: center;
+}
+
+.nav > a{
+    justify-content: inherit;
+}
+
+.about{
+    background-image: url(images/заставка.jpeg);
+    height: 350px;
+}
+
+.products{
+background-color: bisque;
+}
+.novinki{
+    display: flex;
+    justify-content: center;
+    color:#E18892;
+}
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    height: 100%;
+    background-color: #FFEBD3;
+}
+
+.copyright{
+    display: inline-block;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.mail{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.phone{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.counter{
+    background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+    background-position: 0 0;
+    animation: background 2s infinite alternate;
+}
+
+@keyframes background {
+    100% {
+    background-position: 0 200px;
+    }
+}
+
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+.scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+.scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}

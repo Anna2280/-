@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function() {
+                var counterValue = 0;
+
+                function counterAdd() {
+                    counterValue++;
+
+                    if (document.getElementById('js-counter')) {
+                        document.getElementById('js-counter').innerHTML = counterValue;
+                    }
+                }
+
+                setInterval(counterAdd, 1000);
+            });
+        }(jQuery));
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-3">
+            <img class="logo-in" src="https://img.icons8.com/wired/64/000000/tea-cup.png"/>
+            <p class="lettering">CHERRY PIE</p>
+        </div>
+        <div class="col-lg-6 col-md-4 col-sm-3">
+            <ul class="menu">
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Корзина</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</header>
+<nav class="nav">
+    <a class="nav-link disabled" href="#">Мороженное</a>
+    <a class="nav-link disabled" href="#">Выпечка</a>
+    <a class="nav-link disabled" href="#">Торты</a>
+    <a class="nav-link disabled" href="#">Капкейки</a>
+    <a class="nav-link disabled" href="#">Диетические десерты</a>
+    <a class="nav-link disabled" href="#">Напитки</a>
+</nav>
+<main>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="novinki">Новинки</h1>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="scale"><img class="scale" src="images/тарталетки.jpg" alt="тарталетки"></div>
+                        <div class="card-body">
+                        <h5 class="card-title">Вишневые тарталетки</h5>
+                        <p class="card-text">Состав: песочное тесто, а для начинки - вишня, сахар, крахмал</p>
+                        <p class="card-text">Вес: за 1 штуку - 120 грамм</p>
+                        <p class="card-text">Цена: за 1 штуку - 90 рублей</p>
+                        <a href="#" class="btn btn-primary">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="scale"><img class="scale" src="images/макаруны.jpg" alt="макароны"></div>
+                        <div class="card-body">
+                        <h5 class="card-title">Шоколадные макароны</h5>
+                        <p class="card-text">Состав: тесто для macarons, начинка - шоколадный ганаш </p>
+                        <p class="card-text">Вес: за 1 штуку - 100 грамм</p>
+                        <p class="card-text">Цена: за 1 штуку - 90 рублей</p>
+                        <a href="#" class="btn btn-primary">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="scale"><img class="scale" src="images/кексик.jpg" alt="кексик"></div>
+                        <div class="card-body">
+                        <h5 class="card-title">Шоколадный кексы</h5>
+                        <p class="card-text">Состав: тесто для кексов, шоколадный крем, для украшения - лист мяты, орехи</p>
+                        <p class="card-text">Вес: за 1 штуку - 150 грамм</p>
+                        <p class="card-text">Цена: за 1 штуку - 120 рублей</p>
+                        <a href="#" class="btn btn-primary">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="scale"><img class="card-img-top" src="images/тортик.jpg" alt="тортик"></div>
+                        <div class="card-body">
+                        <h5 class="card-title">Шоколадно-вишневый торт</h5>
+                        <p class="card-text">Состав: шоколадный бисквит, вишневый бисквит, сливочный крем, вишневая глазурь</p>
+                        <p class="card-text">Вес: за 1 шутку - 250 грамм</p>
+                        <p class="card-text">Цена: за 1 шутку - 200 рублей</p>
+                        <a href="#" class="btn btn-primary">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h6>Количество совершенных заказов:<div id="js-counter"></div></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">2000-2020, "CHERRY PIE.ru"-<br>Интернет магазин десертов. Все права защищены</p>
+                    <img src="https://img.icons8.com/material-sharp/24/000000/important-mail.png"/>
+                    <p class="mail">cherrypie@gmail.com</p>
+                    <img class="icon-phone" src="https://img.icons8.com/windows/32/000000/cell-phone.png"/>
+                    <p class="phone">+7(951)645-65-90</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
